@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Weather/weather.css" />
+    <script
+      src="https://kit.fontawesome.com/c738f1e810.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather</title>
+  </head>
+  <body id="body">
+    <div class="weather-app" id="weather-app">
+      <div class="container">
+        <h3>Weather</h3>
+        <div class="weather-info-container">
+          <h1 class="temp" >16&#176;</h1>
+            <h1 class="where" id="where">Tirana</h1>
+          <div class="weather"> 
+            <img src="/Weather/weather-content/sun-removebg-preview.png" alt="weather icon" id="weatherIcon">
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form id="search-location">
+          <div class="search-alert-container">
+            <input type="text" class="search" placeholder="Enter Location" id="search"/>
+            <div class="alert" id="alert">Provide location</div>
+          </div>
+          <button type="submit" class="submit" id="submit-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="weather-details">
+          <h1>Conditions:</h4>
+          <li>
+            <span>Cloudy</span>
+            <span class="sunny" id="cloudy-c">100%</span>
+          </li>
+          <li>
+            <span>Humidity</span>
+            <span class="humidity" id="humidity-c">30%</span>
+          </li>
+          <li>
+            <span>Wind</span>
+            <span class="windy" id="windy-c">4km/h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/Weather/weather.js"></script>
+  </body>
+</html>

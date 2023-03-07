@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*============================================================
+                        V A R I A B L E S
+  ============================================================*/
+
+:root {
+  /*================================================
+                      C O L O R
+      ================================================*/
+
+  --white-primary: #fff;
+  --blue-background: #7f8cee;
+  --blue-primary: #0f173d;
+  --black: #000;
+
+  --blue-bg-sec: #7f8cee3d;
+  --red-primary: #d33c3c;
+  --green-primary: rgb(96, 190, 67);
+  --blue-secondary: #0084ff;
+  --blue-shadow: #bdd1e7;
+
+  /*================================================
+                      F O N T
+      ================================================*/
+
+  --font-family-primary: "Poppins", sans-serif;
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+/*============================================================
+                      G L O B A L
+    ===========================================================*/
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+html {
+  line-height: 1.625;
+
+  tab-size: 4;
+}
+
+body,
+header,
+main,
+section,
+footer,
+strong,
+span,
+ul,
+li,
+img,
+svg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+div {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-semi-bold);
+  color: var(--white-primary);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*=============================================================================
+W       E       A       T       H       E       R
+=============================================================================*/
+
+.weather-app {
+  background-image: url("/Weather/weather-content/weather-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  /* padding: 0.5rem; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  width: 60%;
+}
+
+.container h3 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.weather-info-container {
+  align-self: center;
+  width: 95%;
+  margin-top: 5rem;
+  background: #ffffff28;
+  border: 1px solid var(--white-primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.weather-info-container .temp {
+  font-size: 7rem;
+}
+
+.where-when {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.where-when .where {
+  font-size: 2rem;
+}
+
+.weather img {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+}
+
+.weather span {
+  font-size: 1.5rem;
+}
+
+/* ==========================================================================
+                    P       A       N       E       L
+   ==========================================================================*/
+
+.panel {
+  width: 40%;
+  padding: 0.5rem;
+  background: #ffffff28;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.panel form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+form .search-alert-container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.search-alert-container .alert {
+  width: 103%;
+  padding: 2.5rem 0 0 0.5rem;
+  margin-top: -2.6rem;
+  height: 11vh;
+  background: var(--blue-bg-sec);
+  border-radius: 0.25rem;
+  display: none;
+}
+
+.panel form .search {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin: 0.3rem 0.4rem;
+  color: var(--blue-primary);
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.submit {
+  background: var(--black);
+  border-radius: 100rem;
+  padding: 0.7rem 1rem;
+}
+
+.panel .weather-details {
+  align-self: flex-start;
+  margin-left: 3rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.weather-details li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+li span {
+  font-size: 1rem;
+}
